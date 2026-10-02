@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Loosey 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="hearts-container"></div>
+
+<!-- ================= PIN PAGE ================= -->
+<section class="slide active" id="slide1">
+
+    <div class="pin-box">
+
+        <div class="teddy">🧸</div>
+
+        <h1>Hey Loosey 🤍</h1>
+
+        <p>Secret ahh irukku... code enter pannu 😌</p>
+
+        <div id="pinDisplay">••••</div>
+
+        <div class="keypad">
+            <button onclick="pressKey('1')">1</button>
+            <button onclick="pressKey('2')">2</button>
+            <button onclick="pressKey('3')">3</button>
+
+            <button onclick="pressKey('4')">4</button>
+            <button onclick="pressKey('5')">5</button>
+            <button onclick="pressKey('6')">6</button>
+
+            <button onclick="pressKey('7')">7</button>
+            <button onclick="pressKey('8')">8</button>
+            <button onclick="pressKey('9')">9</button>
+
+            <button onclick="clearPin()">⌫</button>
+            <button onclick="pressKey('0')">0</button>
+            <button onclick="checkPin()">✓</button>
+        </div>
+
+        <p id="pinMessage"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BIRTHDAY ================= -->
+<section class="slide" id="slide2">
+
+    <div class="birthday-page">
+
+        <div class="cracker left">🎉</div>
+        <div class="cracker right">🎊</div>
+
+        <div class="big-heart">🤍</div>
+
+        <h1>HAPPY BIRTHDAY</h1>
+
+        <h2>LOOSEY 🧸🤍</h2>
+
+        <p>
+            Finallyyy your special day cameee 😭🤍
+        </p>
+
+        <p class="small-text">
+            One special person deserves one special website 😌
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Seri vaa 😌 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COUNTDOWN ================= -->
+<section class="slide" id="slide3">
+
+    <div class="card">
+
+        <h1>Countdown to your day 🎂</h1>
+
+        <div class="countdown">
+
+            <div>
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p id="countdownText">
+            Waiting for your birthday... 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Time poguthu 😭 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAKE ================= -->
+<section class="slide" id="slide4">
+
+    <div class="cake-card">
+
+        <h1>Okayyy Birthday Boy 🎂🤍</h1>
+
+        <div class="cake">
+
+            <div class="candle">
+                <div class="flame" id="flame">🔥</div>
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-body"></div>
+
+            <div class="plate"></div>
+
+        </div>
+
+        <p id="cakeText">
+            Candle blow pannu 😌
+        </p>
+
+        <button class="cake-btn" onclick="cutCake()">
+            🎂 Cut the Cake
+        </button>
+
+        <br>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Cake mudichacha? →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 1 ================= -->
+<section class="slide" id="slide5">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 01 🤍</span>
+
+        <h1>May 25 🥹</h1>
+
+        <p>
+            namma may 25 apa tha fstt pesa start pannom aparna
+            birthday namm pesa start panni 4 years aaga poguthu...
+        </p>
+
+        <p>
+            naa apa ninaichu kooda paakala ivlo close aavom nu...
+        </p>
+
+        <p>
+            ennoda life laiya ennoda bestfriend nee mattum than
+            antha place ahh yaralum replace panna mudiyathu 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Next memory 🥹 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 2 ================= -->
+<section class="slide" id="slide6">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 02 🫶</span>
+
+        <h1>First Best Friend</h1>
+
+        <p>
+            naa ithukku munnadi la pasanga kitta pesunathu illa
+            unkitta tha fst time pesunen unoda frnd aaganumnu tha
+            ithukku munadi naa yaartaiyum pesala nu ninaikken...
+        </p>
+
+        <p>
+            anyway nee fst and lst bestest friend en life 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Innum irukku 😌 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 3 ================= -->
+<section class="slide" id="slide7">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 03 😂</span>
+
+        <h1>Our Fights 😭</h1>
+
+        <p>
+            namma neraiya fight podurukkom naanum neraiya pesiirukken
+            neeyum neraiya pesiruka athula apavey maranthutu nxt day pesuvom...
+        </p>
+
+        <p>
+            analum unakku payam irukkanu thrl naa vera paiyan
+            kooa pesurenanu ana un mela promise nee matum tha enakku
+            vera yaarum illa..
+        </p>
+
+        <p>
+            unakkku late ahh thoonguna pidikathu naa fight pottutu
+            venumney late ahh thoonguven athukkum nammku figth varum..
+        </p>
+
+        <p>
+            inimey naa sikkiram thoonguren 🤞😂
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Promise ah? 😂 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 4 ================= -->
+<section class="slide" id="slide8">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 04 ☕</span>
+
+        <h1>College Days 🤍</h1>
+
+        <p>
+            aprm nee irutha clg days la rmba miss pandren
+            onna velila tea shop ku ponathu arpm cls cut adichuttu
+            vanthu pesunathu aprm enga culturals la enloodaiyea irunthathu....
+        </p>
+
+        <p>
+            ana itu maari unkooda 1st year la nerla pesiruntthu
+            innum nalla irunthurukkum nu thonuthu antha days la
+            naa miss panniten..
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Continue 🤍 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 5 ================= -->
+<section class="slide" id="slide9">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 05 🎀</span>
+
+        <h1>Small Things 🥹</h1>
+
+        <p>
+            aprm nee chennai poitu vanthu enakku antha bow clips
+            vaangi kuduthathu apa thonuchu nammakkum intha maari
+            la vaangitharaganu..
+        </p>
+
+        <p>
+            aprm important ennoda birthday ku cake cut pannathu
+            unforgattabele memmories 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            More memories →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 6 ================= -->
+<section class="slide" id="slide10">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 06 🏍️</span>
+
+        <h1>Those Days 🤍</h1>
+
+        <p>
+            aprm onna bike la ponathu aprm intership pona apa
+            movie ku ponathu ithu ethumey marakka maaten...
+        </p>
+
+        <p>
+            ennoda clg life uhh innum 3 or 4 month la over aagitum...
+        </p>
+
+        <p>
+            aprm namma meet pannuvomanu kooda thrl..
+            kastama irukku enakku inga irunthu pogurathukkey
+            rmba kastama irukku alugaiya varuthu ana poi thana aaganum...
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Next 🤍 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 7 ================= -->
+<section class="slide" id="slide11">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 07 📱</span>
+
+        <h1>Actually... 🥹</h1>
+
+        <p>
+            aprm oru fight la nee sonna unkooda pesama irukkurathu
+            naa normal ahh tha irukkenu nee summa tha sonna
+            ana enala promise apadi irukka mudiyala...
+        </p>
+
+        <p>
+            nee eppa msg pannuva eppa call panuvanu wait pannitu iruppen..
+        </p>
+
+        <p>
+            nee solluva naa unakku call panna maatikkurenu ana
+            unnaiya tha ninaichuttu iruppen nee call pannuviya
+            msg pannuviya nu...
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Still more 😭 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY 8 ================= -->
+<section class="slide" id="slide12">
+
+    <div class="story-card">
+
+        <span class="slide-label">MEMORY 08 🤍</span>
+
+        <h1>Our Cringe Talks 😂</h1>
+
+        <p>
+            ithula already solliruken nee namba ana itha fact..
+        </p>
+
+        <p>
+            aprm nammaloda cringe fight late night talks
+            athula marakka maaten 🤍
+        </p>
+
+        <p>
+            aprm nee clg muduchuttu pogumpothu feel pannthu
+            ethumey marakka maaten..
+        </p>
+
+        <p>
+            innmu neraiya irukku ana ithoda muduchukkuren...
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            One last thing... →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LETTER ================= -->
+<section class="slide" id="slide13">
+
+    <div class="letter-card">
+
+        <div id="letterQuestion">
+
+            <div class="envelope">💌</div>
+
+            <h1>One Question...</h1>
+
+            <p>
+                En letter ah open panna allow pannuva? 👀🤍
+            </p>
+
+            <div class="yes-buttons">
+
+                <button onclick="openLetter()">
+                    YES 🤍
+                </button>
+
+                <button onclick="moveNoButton(this)">
+                    NO 😌
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div id="letterContent" class="hidden">
+
+            <div class="envelope open">💌</div>
+
+            <h1>For You, Loosey 🤍</h1>
+
+            <p>
+                unaiya avlo pidikkum un mela enku feelings irunthuchu
+                naaney sollirukken ana seri atha vidu...
+            </p>
+
+            <p>
+                namma ipadiyea lst vara irukkalam loosey lst vara
+                iruppiya... iruppa i know...
+            </p>
+
+            <p>
+                ennoda mrg ku la nee sonna maari one week before a
+                vanthutu apmr unnoda ah mrg ku invite pannu..
+            </p>
+
+            <p>
+                apr, oru wish naanum un family kooda pesanum
+                merge aaganum ana nee mummy kitta kooda pesa vitta maatira...
+            </p>
+
+            <p>
+                enga cls fnrds nammala maari irukanga sry namala maari
+                illa irukanga avangalam frnd family kooda la nalla close
+                ah iruppanga enakku antha maari irukkanum nu aasai ahh
+                irukku pls introduce panni vai...
+            </p>
+
+            <p>
+                love u loosey... naa unaiya mrg pannikanum nu ninaikkala...
+                namma ipadiyea lst vara iruppoom athuvey pothum enakku.. 🤍
+            </p>
+
+            <button class="next-btn" onclick="nextSlide()">
+                Okay Loosey... 🤍 →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PHOTOS ================= -->
+<section class="slide" id="slide14">
+
+    <div class="photo-card">
+
+        <h1>Our Memories 📸🤍</h1>
+
+        <div class="photo-viewer">
+
+            <button class="photo-arrow" onclick="previousPhoto()">
+                ❮
+            </button>
+
+            <img
+                id="mainPhoto"
+                src="images/photo1.jpg"
+                onclick="openPhotoModal()"
+                alt="Memory"
+            >
+
+            <button class="photo-arrow" onclick="nextPhoto()">
+                ❯
+            </button>
+
+        </div>
+
+        <p id="photoNumber">
+            1 / 6
+        </p>
+
+        <div class="dots">
+
+            <span onclick="showPhoto(0)"></span>
+            <span onclick="showPhoto(1)"></span>
+            <span onclick="showPhoto(2)"></span>
+            <span onclick="showPhoto(3)"></span>
+            <span onclick="showPhoto(4)"></span>
+            <span onclick="showPhoto(5)"></span>
+
+        </div>
+
+        <p>
+            Photo ah click panna full screen la paakalam 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Next memory →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PHOTO MODAL ================= -->
+
+<div id="photoModal" class="photo-modal">
+
+    <span
+        class="close-photo"
+        onclick="closePhotoModal()">
+        ×
+    </span>
+
+    <img
+        id="modalPhoto"
+        src=""
+        alt="Full memory"
+    >
+
+</div>
+
+
+<!-- ================= SONGS ================= -->
+<section class="slide" id="slide15">
+
+    <div class="song-card">
+
+        <div class="music-icon">
+            🎧
+        </div>
+
+        <h1>For You 🎶🤍</h1>
+
+        <p>
+            Two songs... one more for u da thangamey 🤍
+        </p>
+
+
+        <!-- SONG 1 -->
+
+        <div class="song-box">
+
+            <h2>Song 01 🎵</h2>
+
+            <audio
+                id="song1"
+                preload="metadata">
+
+                <source
+                    src="audio/audio.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+            <button
+                class="play-btn"
+                onclick="toggleSong(1)">
+
+                <span id="playIcon1">
+                    ▶
+                </span>
+
+                <span id="playText1">
+                    Play Song
+                </span>
+
+            </button>
+
+            <div class="song-progress">
+                <div id="progress1"></div>
+            </div>
+
+        </div>
+
+
+        <!-- SONG 2 -->
+
+        <div class="song-box">
+
+            <h2>
+                One More For U Da Thangamey 🤍
+            </h2>
+
+            <audio
+                id="song2"
+                preload="metadata">
+
+                <source
+                    src="audio/audio2.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+            <button
+                class="play-btn"
+                onclick="toggleSong(2)">
+
+                <span id="playIcon2">
+                    ▶
+                </span>
+
+                <span id="playText2">
+                    Play Song
+                </span>
+
+            </button>
+
+            <div class="song-progress">
+                <div id="progress2"></div>
+            </div>
+
+        </div>
+
+        <p id="songMessage"></p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Song mudinjacha? 🎧 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GAME ================= -->
+<section class="slide" id="slide16">
+
+    <div class="game-card">
+
+        <h1>Okayyy One Game 😂🤍</h1>
+
+        <p>
+            Balloons ah pop pannu!
+            Hidden memories varum 🎈
+        </p>
+
+        <div id="balloonArea"></div>
+
+        <p id="gameMessage">
+            Pop at least 5 balloons 😌
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Game over 😂 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ENDING ================= -->
+<section class="slide" id="slide17">
+
+    <div class="ending-card">
+
+        <div class="huge-heart">
+            🤍
+        </div>
+
+        <h1>
+            One Last Thing...
+        </h1>
+
+        <p>
+            seri unaiya pathi sollanumna
+            innum sollala...
+        </p>
+
+        <p>
+            ana ipa mudichukkuren 🥹
+        </p>
+
+        <p>
+            So many memories...
+            so many fights...
+            so many laughs...
+            and so many more to come 🤍
+        </p>
+
+        <button class="next-btn" onclick="nextSlide()">
+            Final ahh polama? 🥹 →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+<section class="slide final-slide" id="slide18">
+
+    <div class="final-card">
+
+        <div class="final-roses">
+            🌹 🌹 🌹
+        </div>
+
+        <h1>
+            THANK YOU
+        </h1>
+
+        <h2>
+            LOVE YOU 🤍
+        </h2>
+
+        <h3>
+            MISS YOU 🥹
+        </h3>
+
+        <p>
+            Happy Birthday Loosey 🧸🤍
+        </p>
+
+        <p>
+            Stay the same paithiyoo...
+            thangoo...
+            chlm...
+            loosey...
+            mental... 😂🤍
+        </p>
+
+        <div class="final-hearts">
+            🤍 🤍 🤍 🤍 🤍
+        </div>
+
+        <p class="end-text">
+            — from someone who will always remember
+            these memories 🤍
+        </p>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
